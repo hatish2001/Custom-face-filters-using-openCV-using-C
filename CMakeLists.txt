@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project(vidDisplay)
+find_package(OpenCV REQUIRED)
+add_executable(vidDisplay vidDisplay.cpp filter.cpp faceDetect.cpp filter.h faceDetect.h )
+target_link_libraries(vidDisplay ${OpenCV_LIBS})
